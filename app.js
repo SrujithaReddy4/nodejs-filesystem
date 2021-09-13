@@ -1,7 +1,8 @@
-const app = require("express");
+const express = require("express");
+const app = express();
 const PORT = 4000;
 
-app.length("", (req, res) =>{
+app.get('/', (req, res) =>{
     res.send("Nodejs_FileSystem");
 });
 
